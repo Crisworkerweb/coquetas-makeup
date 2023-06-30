@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*---Barra de Navegacion---*/
+.navbar{
+    padding: 2rem;
+    background-color: rgba(192, 178, 151, 0.658);    
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: end;
+}
+.navbar ul{
+    align-items: center;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: #ff523b;
+}
+
+.tit-carrusel{
+    font-size: 40px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-10%,-50%);
+}
+
+/*--- Seccion destacados ---*/
+
+.col-lg-4{
+    position: relative;
+}
+
+.tit-foto{
+    font-size: 30px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    transform: translate(-10%,-50%);
+}
+.row button{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 88%;
+    left: 38%;
+    transform: translate(-10%,-50%);
+}
+
+/*#destacados{
+    background-color: rgb(217, 208, 226);
+    height: 39rem;    
+}*/
+
+.titulo{
+    color: rgb(93, 121, 121);
+    font-size: 50px;
+    position: relative;
+    line-height: 60px;
+}
+.titulo::after{
+    content: '';
+    background: #ff523b;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row img{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+    padding: 0px ;
+}
+#img-destacados{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*--- Seccion Top-Ventas Carousel ---*/
+
+.owl-container{
+    max-width: 85%;
+    max-height: 30%;
+    margin: 0 auto;
+}
+
+.item{
+    background: none;
+    color: rgb(93, 121, 121);
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+.item h5{
+    font-size: 15px;
+    text-align: center;
+}
+.item h6{
+    font-size: 15px;
+}
+.item p{
+    font-size: 15px !important;
+}
+.item .rating{
+    font-size: 16px;
+    color: coral;
+}
+.item .boton-oferta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 25px;
+    margin: 5px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.item .boton-oferta:hover{
+    background: #563434;
+    transition: 0.5s ease-in;
+}
+
+/*--- Seccion ofertas y combos ---*/
+
+#oferta{
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+#oferta img{
+    box-shadow: none;
+
+}
+#oferta .titulo-oferta-especial{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#oferta .titulo1-oferta{
+    font-size: 30px;
+    color: #ff523b;
+    font-family: 'Ubuntu', sans-serif;
+}
+#oferta .des-oferta{
+    font-size: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+#oferta .p-regular{
+    font-size: 25px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+#oferta .p-oferta{
+    font-size: 35px;
+    color: #ff523b;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#oferta .boton-oferta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 5px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+#oferta .boton-oferta:hover{
+    background: #563434;
+    transition: 0.5s ease-in;
+}
+
+/*--- Seccion Testimonios ---*/
+
+.testimonio-imagen{
+    border-radius: 50%;
+    width: 90px !important;
+}
+.testimonio-texto{
+    text-align: center;
+    font-size: 15px !important;
+    padding-left:15px !important;
+    padding-right: 15px !important; 
+}
+
+.testimonio-info .cliente{
+    font-weight: bold;
+}
+
+/*--- Seccion Nosotros ---*/
+
+#nosotros{
+    background-color: rgb(241, 207, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+#nosotros .titulo-nosotros{
+    font-size: 40px;
+    color: white;
+    text-align: center;   
+    font-family: 'Ubuntu', sans-serif;
+}
+#nosotros .des-nosotros{
+    font-size: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+#nosotros .andrea{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ff523b;
+}
+#nosotros .siguenos{
+    font-size: 18px;
+    color: #ff523b;
+}
+.redes img{
+    box-shadow: none;
+}
+
+#marcas{
+    background: none;
+    color: rgb(93, 121, 121);
+    justify-content: center;
+    align-items: center;
+    height: 26rem;
+    display: flex;
+
+}
+.marca-imagen{
+    width: 170px !important;
+}
+
+  /*--- Seccion footer ---*/
+
+  #footer{
+    background-color: black;
+    color: rgb(93, 121, 121);
+
+}
+.color{
+    background-color: white;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: rgb(39, 51, 51);
+}
+#footer ul li a:hover{
+    color: yellow !important;
+}
+.redes a{
+    box-shadow: 0 0 20px 0px rgb(240, 235, 235);
+}
+.redes a:hover{
+    transform: translateY(-10px);
+}
+
+
+/*--- Seccion contacto ---*/
+
+.gradient-brand-color {
+    background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    color: #fff;
+}
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+
+/* ------ Seccion todos los productos ------*/
+
+#row-paletas{
+    height: 35rem;
+}
+
+#row-paletas .titulo1,
+#row-skin-care .titulo1,
+#row-manicura .titulo1,
+#row-gemas .titulo1,
+#row-labios .titulo1,
+#row-ojos .titulo1,
+#row-bases .titulo1,
+#row-mochis .titulo1{
+    color: #887979;
+    padding: 25px 30px 10px 60px;
+    text-align: left;
+}
+
+/* ------ Seccion Eventos ------*/
+
+.titulo-glitter{
+    font-size: 50px;
+}
+.sub-titulo-glitter{
+    font-size: 35px;
+}
+#encabezado h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: #ff523b;
+}
+#descripcion{
+    background-color: rgba(229, 221, 196, 0.349);
+    padding: 10px 30px;
+    
+}
+#derecho{
+    font-size: 30;
+    font-weight: bold;
+    color: rgb(196, 62, 196);
+}
+
+/*--- Seccion Media Query ---*/
+
+/*
+@media only screen and (max-width: 750px) {
+    #oferta{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px){
+    #contacto{
+    background-color:  rgb(241, 207, 212);
+    min-height: 200px;
+    }
+}*/
+
